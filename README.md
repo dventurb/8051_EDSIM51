@@ -112,7 +112,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
        MOV R0, #30h         ; Endereço da memória 30h para o Registrador R0
        MOV A, #05h          ; Mover o valor 5 para o Acumulador
        MOV @R0, A           ; Armazena o valor 5 na posição de memória 30h (endereço apontado por R0)
-       ```
+```
 
 
 
@@ -122,7 +122,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
        MOV R3, #05h       ; Mover 5 para o R3
        LOOP:              ; Inicio do LOOP
        DJNZ R3, LOOP      ; Decrementa o valor em R3 e Salta para LOOP enquanto R3 não for 0
-       ```
+  ```
 
 
 
@@ -143,7 +143,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
      ADD A, #03h       ; Adicionar 3 ao valor em A (A = 5 + 3 = 8)
      MOV B, #02h       ; Move o valor 2 para o registrador B
      SUBB A, B         ; Subtrai o valor de B em A e Armazena em A (A = 8 - 2 = 6)
-     ```
+   ```
 
   
   **INC e DEC:** 
