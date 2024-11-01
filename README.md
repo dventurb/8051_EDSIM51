@@ -183,7 +183,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     
   ***JNZ (JUMP IF NOT ZERO)***
     O JNZ verifica o conteúdo do Acumulador (A), se o resultado da operação anterior não for zero, o fluxo do programa salta para a LABEL indicada.
-    ```asm
+  ```asm
     MOV A, #02h       ; Mover o valor de 2 para o Acumulador (A)
     SUBB A, #1        ; Subtrair 1 ao valor do Acumulador (A = 2 - 1)
     JNZ LABEL_CRIADA  ; Verifica o valor do Acumulador, se não for 0 irá salta para LABEL_CRIADA
