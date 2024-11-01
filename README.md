@@ -8,7 +8,6 @@
 
 # Conteúdo
 
-- [Resumo](#Resumo)
 - [Software](#Software)
 - [Diagrama](#Diagrama)
 - [Projetos](#Projetos)
@@ -87,8 +86,18 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
   **Acumulador (A):** 
      É o principal registrador, serve principalmente para armazenar resultados de operações aritméticas e lógicas.
      
+     MOV A, #05h          ; Mover o valor 5 para o Acumulador
+     ADD A, #05h          ; Adicionar 5 ao valor atual do Acumulador (A = 5 + 5)
+
+     
 **Registrador B:** 
-    Um registrador secundário utilizado para multiplicação e divisão, trabalha junto com o Acumulador (A) nessas operações.
+    Um registrador secundário utilizado para multiplicação e divisão, trabalha em conjunto com o Acumulador (A) nessas operações.
+
+    MOV A, #06h          ; Mover o valor 5 para o Acumulador
+    MOV B, #03h          ; Mover o valor 2 para o Registrador B
+    MUL AB               ; Multiplicar A por B e Armazena o resultado no Acumulador (A = 10, B = 2) 
+
+
 
 **Registradores (R0 a R7):** 
 
@@ -101,8 +110,14 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
        MOV @R0, A           ; Armazena o valor 5 na posição de memória 30h (endereço apontado por R0)
 
 
+
   ***Funções dos R2 a R7*** 
       Os Registradores de R2 a R7 são utilizados para armazenar dados temporários, contadores em loops e outras variáveis.
+
+       MOV R3, #05h       ; Mover 5 para o R3
+       LOOP:              ; Inicio do LOOP
+       DJNZ R3, LOOP      ; Decrementa o valor em R3 e Salta para LOOP enquanto R3 não for 0
+
 
 
     
