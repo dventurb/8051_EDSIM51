@@ -188,7 +188,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
       JMP LABEL_CRIADA     ; Salta para a END_LABEL
       ...
       LABEL_CRIADA:        ; Destino do salto
-      ```
+  ```
 
     
   ***JNZ (JUMP IF NOT ZERO)***
