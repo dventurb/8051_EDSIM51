@@ -30,7 +30,7 @@ O simulador funciona em Windows, Linux e macOS, por ser baseado em JavaTM, deve 
 Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15 projetos que exploram a interação com dispositivos de entrada e saída
 
 
-**Controle de Cursor**:
+<p align="center"><strong>Controle de Cursor</strong></p>
 
 Posiciona um cursor na memória (endereço 38h) e permite seu movimento em quatro direções (2 para subir, 8 para descer, 6 para direita, 4 para esquerda) usando o teclado numérico. A posição anterior é apagada antes de cada movimento, e cada tecla deve ser liberada antes da próxima ação.
 
