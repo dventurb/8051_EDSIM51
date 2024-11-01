@@ -120,5 +120,34 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
 
 
+## Instruções Básicas
+
+  **MOV:** 
+    Utilizado para mover dados de uma localização para outra.
+    
+     MOV A, #10h        ; Move o valor hexadecimal 10 para o Acumulador (A)
+
+    
+    
+  **ADD e SUBB:** 
+    Operações aritméticas de soma e subtração. ADD soma valores e SUBB subtrai.
+  
+     MOV A, #05h       ; Mover o valor 5 para o Acumulador (A)
+     ADD A, #03h       ; Adicionar 3 ao valor em A (A = 5 + 3 = 8)
+     MOV B, #02h       ; Move o valor 2 para o registrador B
+     SUBB A, B         ; Subtrai o valor de B em A e Armazena em A (A = 8 - 2 = 6)
+
+  
+  **INC e DEC:** 
+   Instruções de incremento e decremento que aumentam ou diminuem o valor em um registrador.
+
+   MOV R1, #01h      ; Mover o valor hexadecimal 01 para o registrador R1
+   INC R1            ; Incrementa o valor em R1 (R1 = 02h)
+   MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
+   DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
+
+
+
+
     
 
