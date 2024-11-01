@@ -145,8 +145,43 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     INC R1            ; Incrementa o valor em R1 (R1 = 02h)
     MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
     DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
+    
+
+## Modos de Endereçamento
+
+  **Direto:**
+    A instrução acessa diretamente o endereço de memória especificado.
+    
+    MOV A, 30h   ; Move o valor do endereço 30h para o acumulador.
 
 
+  **Indireto:** 
+    Um registrador aponta para o endereço de memória desejado.
+    
+    MOV R0, #30h     ; Carregar o endereço 30h no registrador R0 (Apontador)
+    MOV A, @R0       ; Mover o valor do endereço de memória apontado por R0 para o Acumulador (A) 
+
+
+## Controlo de Fluxo
+
+  **Instruções de Salto:** 
+    ***JMP (Salto Incondicional)***
+      O JMP permite que o fluxo do programa salte incondicionalmente para a LABEL indicada.
+      
+      JMP LABEL_CRIADA     ; Salta para a END_LABEL
+      ...
+      LABEL_CRIADA:        ; Destino do salto
+
+    
+  ***JNZ (Jump if Not Zero)***
+    O JNZ verifica o conteúdo do Acumulador (A), se o resultado da operação anterior não for zero, o fluxo do programa salta para a LABEL indicada.
+
+    mov A, #02h       ; Mover o valor de 2 para o Acumulador (A)
+    subb A, #1        ; Subtrair 1 ao valor do Acumulador ( A = 2 - 1)
+    JNZ LABEL_CRIADA  ; Verifica o valor do Acumulador, se não for 0 irá salta para LABEL_CRIADA
+    ...
+    LABEL_CRIADA:
+  
 
 
     
