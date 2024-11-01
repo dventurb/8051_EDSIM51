@@ -108,7 +108,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
   ***Funções do R0 e R1***
        Os registradores R0 e R1 tem uma função específica, eles funcionam de forma semelhante a Apontadores em Linguagem C. 
        Por exemplo, podemos armazenar um endereço específico de memória RAM, nos registradores R0 ou R1.
-      ```asm
+    ```asm
        MOV R0, #30h         ; Endereço da memória 30h para o Registrador R0
        MOV A, #05h          ; Mover o valor 5 para o Acumulador
        MOV @R0, A           ; Armazena o valor 5 na posição de memória 30h (endereço apontado por R0)
@@ -118,7 +118,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   ***Funções dos R2 a R7*** 
       Os Registradores de R2 a R7 são utilizados para armazenar dados temporários, contadores em loops e outras variáveis.
-     ```asm
+    ```asm
        MOV R3, #05h       ; Mover 5 para o R3
        LOOP:              ; Inicio do LOOP
        DJNZ R3, LOOP      ; Decrementa o valor em R3 e Salta para LOOP enquanto R3 não for 0
@@ -138,7 +138,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     
   **ADD e SUBB:** 
     Operações aritméticas de soma e subtração. ADD soma valores e SUBB subtrai.
-    ```asm
+   ```asm
      MOV A, #05h       ; Mover o valor 5 para o Acumulador (A)
      ADD A, #03h       ; Adicionar 3 ao valor em A (A = 5 + 3 = 8)
      MOV B, #02h       ; Move o valor 2 para o registrador B
@@ -184,7 +184,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   ***JMP (Salto Incondicional)***
       O JMP permite que o fluxo do programa salte incondicionalmente para a LABEL indicada.
-    ```asm
+  ```asm
       JMP LABEL_CRIADA     ; Salta para a END_LABEL
       ...
       LABEL_CRIADA:        ; Destino do salto
@@ -193,7 +193,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     
   ***JNZ (JUMP IF NOT ZERO)***
     O JNZ verifica o conteúdo do Acumulador (A), se o resultado da operação anterior não for zero, o fluxo do programa salta para a LABEL indicada.
-  ```asm
+```asm
     MOV A, #02h       ; Mover o valor de 2 para o Acumulador (A)
     SUBB A, #1        ; Subtrair 1 ao valor do Acumulador (A = 2 - 1)
     JNZ LABEL_CRIADA  ; Verifica o valor do Acumulador, se não for 0 irá salta para LABEL_CRIADA
