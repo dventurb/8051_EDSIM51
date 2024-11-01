@@ -215,8 +215,8 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
 ## Entradas e Saídas (I/O)
 
- -PORT0 (P0.0 a P0.7): Este porta é utilizada para o teclado numérico de 4x4.
- -PORT1 (P1.0 a P1.7): Esta porta é utilizada para controlar LEDs.
+ **PORT0 (P0.0 a P0.7):** Este porta é utilizada para o teclado numérico de 4x4.
+ **PORT1 (P1.0 a P1.7):** Esta porta é utilizada para controlar LEDs.
 
 ### Estrutura do Teclado Numérico
 
