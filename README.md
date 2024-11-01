@@ -209,7 +209,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 ### Estrutura do Teclado Numérico
 
 O teclado numérico tem 4 colunas e 4 linhas, como podemos verificar na figura.
-<img src="https://github.com/dventurb/8051_EDSIM51/blob/main/keypad.png" alt="KEYPAD" width="200" height="150" />
+<img src="https://github.com/dventurb/8051_EDSIM51/blob/main/keypad.png" alt="KEYPAD" width="600" height="450" />
 
 
 Para simplificar, vamos utilizar P0.0 a P0.3 para as linhas e P0.4 a P0.6 para as colunas. A quarta coluna pode não ser usada neste exemplo.
