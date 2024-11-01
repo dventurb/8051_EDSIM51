@@ -10,7 +10,7 @@
 
 - [Resumo](#Resumo)
 - [Software](#Software)
-- [Diagrama](#Diagrama Lógico)
+- [Diagrama Lógico](#Diagrama)
 - [Visão Geral](#Geral)
 - [Projetos](#Projetos)
 
