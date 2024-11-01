@@ -139,12 +139,12 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   
   **INC e DEC:** 
-   Instruções de incremento e decremento que aumentam ou diminuem o valor em um registrador.
+    Instruções de incremento e decremento que aumentam ou diminuem o valor em um registrador.
 
-   MOV R1, #01h      ; Mover o valor hexadecimal 01 para o registrador R1
-   INC R1            ; Incrementa o valor em R1 (R1 = 02h)
-   MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
-   DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
+    MOV R1, #01h      ; Mover o valor hexadecimal 01 para o registrador R1
+    INC R1            ; Incrementa o valor em R1 (R1 = 02h)
+    MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
+    DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
 
 
 
