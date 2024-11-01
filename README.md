@@ -87,17 +87,19 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   **Acumulador (A):** 
      É o principal registrador, serve principalmente para armazenar resultados de operações aritméticas e lógicas.
-     ```asm
+   ```asm
      MOV A, #05h          ; Mover o valor 5 para o Acumulador
      ADD A, #05h          ; Adicionar 5 ao valor atual do Acumulador (A = 5 + 5)
+```
 
      
 **Registrador B:** 
     Um registrador secundário utilizado para multiplicação e divisão, trabalha em conjunto com o Acumulador (A) nessas operações.
-    ```asm
+  ```asm
     MOV A, #06h          ; Mover o valor 5 para o Acumulador
     MOV B, #03h          ; Mover o valor 2 para o Registrador B
-    MUL AB               ; Multiplicar A por B e Armazena o resultado no Acumulador (A = 10, B = 2) 
+    MUL AB               ; Multiplicar A por B e Armazena o resultado no Acumulador (A = 10, B = 2)
+```
 
 
 
@@ -106,19 +108,21 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
   ***Funções do R0 e R1***
        Os registradores R0 e R1 tem uma função específica, eles funcionam de forma semelhante a Apontadores em Linguagem C. 
        Por exemplo, podemos armazenar um endereço específico de memória RAM, nos registradores R0 ou R1.
-       ```asm
+      ```asm
        MOV R0, #30h         ; Endereço da memória 30h para o Registrador R0
        MOV A, #05h          ; Mover o valor 5 para o Acumulador
        MOV @R0, A           ; Armazena o valor 5 na posição de memória 30h (endereço apontado por R0)
+       ```
 
 
 
   ***Funções dos R2 a R7*** 
       Os Registradores de R2 a R7 são utilizados para armazenar dados temporários, contadores em loops e outras variáveis.
-       ```asm
+     ```asm
        MOV R3, #05h       ; Mover 5 para o R3
        LOOP:              ; Inicio do LOOP
        DJNZ R3, LOOP      ; Decrementa o valor em R3 e Salta para LOOP enquanto R3 não for 0
+       ```
 
 
 
@@ -126,27 +130,30 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   **MOV:** 
     Utilizado para mover dados de uma localização para outra.
-    ```asm
+  ```asm
      MOV A, #10h        ; Move o valor hexadecimal 10 para o Acumulador (A)
+```
 
     
     
   **ADD e SUBB:** 
     Operações aritméticas de soma e subtração. ADD soma valores e SUBB subtrai.
-     ```asm
+    ```asm
      MOV A, #05h       ; Mover o valor 5 para o Acumulador (A)
      ADD A, #03h       ; Adicionar 3 ao valor em A (A = 5 + 3 = 8)
      MOV B, #02h       ; Move o valor 2 para o registrador B
      SUBB A, B         ; Subtrai o valor de B em A e Armazena em A (A = 8 - 2 = 6)
+     ```
 
   
   **INC e DEC:** 
     Instruções de incremento e decremento que aumentam ou diminuem o valor em um registrador.
-    ```asm
+  ```asm
     MOV R1, #01h      ; Mover o valor hexadecimal 01 para o registrador R1
     INC R1            ; Incrementa o valor em R1 (R1 = 02h)
     MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
     DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
+```
 
     
 
@@ -155,16 +162,18 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   **Direto:**
     A instrução acessa diretamente o endereço de memória especificado.
-    ```asm
+  ```asm
     MOV A, 30h   ; Move o valor do endereço 30h para o acumulador.
+```
 
 
 
   **Indireto:** 
     Um registrador aponta para o endereço de memória desejado.
-    ```asm
+  ```asm
     MOV R0, #30h     ; Carregar o endereço 30h no registrador R0 (Apontador)
-    MOV A, @R0       ; Mover o valor do endereço de memória apontado por R0 para o Acumulador (A) 
+    MOV A, @R0       ; Mover o valor do endereço de memória apontado por R0 para o Acumulador (A)
+```
 
 
 ## Controlo de Fluxo
@@ -175,10 +184,11 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   ***JMP (Salto Incondicional)***
       O JMP permite que o fluxo do programa salte incondicionalmente para a LABEL indicada.
-      ```asm
+    ```asm
       JMP LABEL_CRIADA     ; Salta para a END_LABEL
       ...
       LABEL_CRIADA:        ; Destino do salto
+      ```
 
     
   ***JNZ (JUMP IF NOT ZERO)***
@@ -194,12 +204,13 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   ***JMZ (JUMP IF ZERO)***
      O JMZ verifica se o resultado é zero, se o resultado for zero, o fluxo do programa salta para a LABEL indicada. 
-     ```asm
+   ```asm
      MOV A, #02h       ; Mover 0 para o acumulador A
      SUBB A, #2        ; Subtrair 2 ao valor do Acumulador (A = 2 - 2)   
      JMZ LABEL_CRIADA  ; Se A é zero, salta para LABEL_CRIADA
      ...
      LABEL_CRIADA:
+```
 
 
 ## Entradas e Saídas (I/O)
