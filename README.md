@@ -35,72 +35,71 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 Posiciona um cursor na memória (endereço 38h) e permite seu movimento em quatro direções (2 para subir, 8 para descer, 6 para direita, 4 para esquerda) usando o teclado numérico. A posição anterior é apagada antes de cada movimento, e cada tecla deve ser liberada antes da próxima ação.
 
 
-**Leitura de Teclado e Exibição em 7 Segmentos**:
+<p align="center"><strong>Leitura de Teclado e Exibição em 7 Segmentos</strong></p>
 
 Lê a tecla pressionada no teclado numérico e exibe o valor no display de 7 segmentos, mantendo-o até que uma nova tecla seja pressionada.
 
 
-**Leitura ADC com Exibição de 0 a 9**:
+<p align="center"><strong>Leitura ADC com Exibição de 0 a 9</strong></p>
 
  Lê um valor da unidade de conversão analógico-digital (ADC) e o exibe como um nível entre 0 e 9 no display de 7 segmentos.
 
 
-**Leitura ADC com Exibição de 0 a 99**:
+<p align="center"><strong>Leitura ADC com Exibição de 0 a 99</strong></p>
 
 Similar ao anterior, mas exibe o valor lido de 0 a 99 na memória.
 
-
-**Indicador de Nível de Bateria**:
+<p align="center"><strong>Indicador de Nível de Bateria</strong></p>
 
 Monitora o nível de carga de uma bateria, acendendo um LED verde para níveis acima de 4V, vermelho para abaixo de 2V, e amarelo para níveis intermediários.
 
 
-**Sequência de Teclas no Teclado Numérico**:
+<p align="center"><strong>Sequência de Teclas no Teclado Numérico</strong></p>
    
 Armazena em sequência cada tecla pressionada no teclado numérico, começando na posição 20h e avançando para o próximo endereço a cada nova tecla. Também requer que cada tecla seja liberada antes da próxima entrada.
 
 
-**Sequência de Teclas com Teclado de Switches**:
+<p align="center"><strong>Sequência de Teclas com Teclado de Switches</strong></p>
 
 Similar ao projeto anterior, mas utilizando um teclado de switches para armazenar as teclas em sequência de memória.
 
 
-**Contador Up/Down em Display de 7 Segmentos**:
+<p align="center"><strong>Contador Up/Down em Display de 7 Segmentos</strong></p>
 
 Um contador que usa duas teclas para incrementar e decrementar o valor exibido no display de 7 segmentos, com rotação entre 0 e 9.
 
 
-**Contador Up/Down na Memória**:
+<p align="center"><strong>Contador Up/Down na Memória</strong></p>
 
 Expande o contador anterior para valores de 0 a 99 e armazena os valores diretamente na memória.
 
 
-**Conversor Binário para Decimal em Display**:
+<p align="center"><strong>Conversor Binário para Decimal em Display</strong></p>
 
 Ajusta um valor binário e o exibe em formato decimal com três dígitos consecutivos em posições de memória de 20h a 22h.
 
 
-**Controle de LEDs com Teclado Numérico**:
+<p align="center"><strong>Controle de LEDs com Teclado Numérico</strong></p>
 
 Usa teclas de 0 a 8 no teclado numérico para acender em sequência uma quantidade correspondente de LEDs. A quantidade acesa é mantida até a próxima entrada.
 
 
-**Dado Eletrônico em Memória**:
+<p align="center"><strong>Dado Eletrônico em Memória</strong></p>
 
 Implementa um dado eletrônico, sorteando um número entre 1 e 6, que é exibido na memória.
 
 
-**Dado Eletrônico em Display de 7 Segmentos**:
+<p align="center"><strong>Dado Eletrônico em Display de 7 Segmentos</strong></p>
 
 Similar ao anterior, mas exibe o número sorteado no display de 7 segmentos.
 
 
-**Contagem de Teclas Premidas em Memória**:
+<p align="center"><strong>Contagem de Teclas Premidas em Memória</strong></p>
 
 Armazena em memória a contagem de teclas pressionadas.
 
 
-**Contagem de Teclas Premidas em 7 Segmentos**:
+<p align="center"><strong>Contagem de Teclas Premidas em 7 Segmentos</strong></p>
 
  Exibe a contagem de teclas pressionadas no display de 7 segmentos.
 
