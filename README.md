@@ -181,14 +181,25 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
       LABEL_CRIADA:        ; Destino do salto
 
     
-  ***JNZ (Jump if Not Zero)***
+  ***JNZ (JUMP IF NOT ZERO)***
     O JNZ verifica o conteúdo do Acumulador (A), se o resultado da operação anterior não for zero, o fluxo do programa salta para a LABEL indicada.
 
-    mov A, #02h       ; Mover o valor de 2 para o Acumulador (A)
-    subb A, #1        ; Subtrair 1 ao valor do Acumulador ( A = 2 - 1)
+    MOV A, #02h       ; Mover o valor de 2 para o Acumulador (A)
+    SUBB A, #1        ; Subtrair 1 ao valor do Acumulador (A = 2 - 1)
     JNZ LABEL_CRIADA  ; Verifica o valor do Acumulador, se não for 0 irá salta para LABEL_CRIADA
     ...
     LABEL_CRIADA:
+
+
+  ***JMZ (JUMP IF ZERO)***
+     O JMZ verifica se o resultado é zero, se o resultado for zero, o fluxo do programa salta para a LABEL indicada. 
+
+     MOV A, #02h       ; Mover 0 para o acumulador A
+     SUBB A, #2        ; Subtrair 2 ao valor do Acumulador (A = 2 - 2)   
+     JMZ LABEL_CRIADA  ; Se A é zero, salta para LABEL_CRIADA
+     ...
+     LABEL_CRIADA:
+     
   
 
 
