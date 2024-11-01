@@ -12,7 +12,7 @@
 - [Software](#Software)
 - [Diagrama](#Diagrama)
 - [Projetos](#Projetos)
-- [Conceitos] (#Conceitos)
+- [Conceitos](#Conceitos)
 
 
 # Software
@@ -74,6 +74,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
 **Contagem de Teclas Premidas em 7 Segmentos**:
     Exibe a contagem de teclas pressionadas no display de 7 segmentos.
+
 
 
 # Conceitos
