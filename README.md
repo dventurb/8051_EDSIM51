@@ -189,6 +189,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     JNZ LABEL_CRIADA  ; Verifica o valor do Acumulador, se não for 0 irá salta para LABEL_CRIADA
     ...
     LABEL_CRIADA:
+```
 
 
   ***JMZ (JUMP IF ZERO)***
@@ -224,5 +225,6 @@ lin4 equ P0.3 ; Linha 4
 col1 equ P0.4 ; Coluna 1
 col2 equ P0.5 ; Coluna 2
 col3 equ P0.6 ; Coluna 3
+```
     
 
