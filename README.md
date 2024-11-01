@@ -78,6 +78,8 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
 # Conceitos
 
+
+
  ## Arquitetura do 8051
  
   **Arquitetura Harvard:**
@@ -145,14 +147,17 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
     INC R1            ; Incrementa o valor em R1 (R1 = 02h)
     MOV 40h, #01h     ; Move o valor hexadecimal 01 para o endereço de memória 40h
     DEC 40h           ; Decrementa o valor na posição de memória 40h (40h = 00h)
+
     
 
 ## Modos de Endereçamento
+
 
   **Direto:**
     A instrução acessa diretamente o endereço de memória especificado.
     
     MOV A, 30h   ; Move o valor do endereço 30h para o acumulador.
+
 
 
   **Indireto:** 
@@ -164,8 +169,11 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
 ## Controlo de Fluxo
 
+
   **Instruções de Salto:** 
-    ***JMP (Salto Incondicional)***
+
+
+  ***JMP (Salto Incondicional)***
       O JMP permite que o fluxo do programa salte incondicionalmente para a LABEL indicada.
       
       JMP LABEL_CRIADA     ; Salta para a END_LABEL
