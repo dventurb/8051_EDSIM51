@@ -6,10 +6,23 @@
 </p>
 </div>
 
-# Conteudo
+# Conteúdo
 
 - [Resumo](#Resumo)
 - [Ferramentas Utilizadas](#Ferramentas)
 - [Documentação](#Documentação)
 - [Visão Geral](#Geral)
 - [Projetos](#Projetos)
+
+
+# Ferramentas
+
+## EDSIM51
+O simulador funciona em Windows, Linux e macOS, por ser baseado em JavaTM, deve funcionar em qualquer sistema operacional que tenha o Java Runtime Environment instalado.
+[Download](https://sourceforge.net/projects/edsim51/)
+[Instruções](https://edsim51.com/installation-instructions/)
+
+
+# Diagrama Lógico
+<img src="https://edsim51.wordpress.com/wp-content/uploads/2024/08/logicdiagram.png?w=961" alt="Diagrama"/>
+
