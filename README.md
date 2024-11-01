@@ -23,6 +23,6 @@ O simulador funciona em Windows, Linux e macOS, por ser baseado em JavaTM, deve 
 - [Instruções](https://edsim51.com/installation-instructions/)
 
 
-# Diagrama Lógico
+# Diagrama
 <img src="https://edsim51.wordpress.com/wp-content/uploads/2024/08/logicdiagram.png?w=961" alt="Diagrama"/>
 
