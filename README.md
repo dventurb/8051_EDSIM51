@@ -108,7 +108,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
   ***Funções do R0 e R1***
        Os registradores R0 e R1 tem uma função específica, eles funcionam de forma semelhante a Apontadores em Linguagem C. 
        Por exemplo, podemos armazenar um endereço específico de memória RAM, nos registradores R0 ou R1.
-    ```asm
+  ```asm
        MOV R0, #30h         ; Endereço da memória 30h para o Registrador R0
        MOV A, #05h          ; Mover o valor 5 para o Acumulador
        MOV @R0, A           ; Armazena o valor 5 na posição de memória 30h (endereço apontado por R0)
@@ -118,7 +118,7 @@ Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15
 
   ***Funções dos R2 a R7*** 
       Os Registradores de R2 a R7 são utilizados para armazenar dados temporários, contadores em loops e outras variáveis.
-    ```asm
+  ```asm
        MOV R3, #05h       ; Mover 5 para o R3
        LOOP:              ; Inicio do LOOP
        DJNZ R3, LOOP      ; Decrementa o valor em R3 e Salta para LOOP enquanto R3 não for 0
