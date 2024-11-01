@@ -215,15 +215,15 @@ O teclado numérico tem 4 colunas e 4 linhas, como podemos verificar na figura.
 
 Para simplificar, vamos utilizar P0.0 a P0.3 para as linhas e P0.4 a P0.6 para as colunas. A quarta coluna pode não ser usada neste exemplo.
      
-  ; Definição das linhas e colunas do teclado
-  lin1 equ P0.0 ; Linha 1
-  lin2 equ P0.1 ; Linha 2
-  lin3 equ P0.2 ; Linha 3
-  lin4 equ P0.3 ; Linha 4
+   ; Definição das linhas e colunas do teclado
+   lin1 equ P0.0 ; Linha 1
+   lin2 equ P0.1 ; Linha 2
+   lin3 equ P0.2 ; Linha 3
+   lin4 equ P0.3 ; Linha 4
 
-  col1 equ P0.4 ; Coluna 1
-  col2 equ P0.5 ; Coluna 2
-  col3 equ P0.6 ; Coluna 3
+   col1 equ P0.4 ; Coluna 1
+   col2 equ P0.5 ; Coluna 2
+   col3 equ P0.6 ; Coluna 3
 
 
 
