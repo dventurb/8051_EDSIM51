@@ -272,28 +272,34 @@ col3 equ P0.6 ; Coluna 3
 
 #### 1º: Ativar o Chip Select (CS) do Decoder no pino P0.7.
  <img src="https://i.imgur.com/B49ZFZV.png" alt="CS" width="450" height="350" />
- ```asm
-CLR P0.7   ; Desativa o Pino P0.7 (CS do Decoder)
-SETB P0.7  ; Ativa o Pino P0.7 (CS do Decoder) 
+ 
+```asm
+
+ CLR P0.7   ; Desativa o Pino P0.7 (CS do Decoder)
+ SETB P0.7  ; Ativa o Pino P0.7 (CS do Decoder)
+
 ```
 
  
  
 #### 2º: Selecionar o display desejado utilizando os pinos A1 e A0 (P3.4 e P3.3).
   <img src="https://i.imgur.com/yzGgWLo.png" alt="A1A2" width="450" height="350" />
- ```asm
+  
+```asm
  ; Neste exemplo estamos a definir o uso do Display 1
 
  CLR P3.4   ; A1 = 0 
- SETB P3.3  ; A0 = 1  
- ```
+ SETB P3.3  ; A0 = 1
+
+```
 
   
  
 #### 3º: Escrever os números nos displays utilizando os pinos P1.0 a P1.7 que estão conectados aos segmentos dos displays.**
   <img src="https://i.imgur.com/zyGJjRj.png" alt="LEDS" width="450" height="350" />
   
-  ```asm
+```asm
+
 ; Neste exemplo estamos da definir o número 0 nos segmentos
 
  SETB P1.0         ; Ativa o segmento A
@@ -303,8 +309,9 @@ SETB P0.7  ; Ativa o Pino P0.7 (CS do Decoder)
  SETB P1.4         ; Ativa o segmento E
  SETB P1.5         ; Ativa o segmento F
  CLR P1.6          ; Desativa o segmento G
- CLR P1.7          ; Desativa o segmento do Ponto Decimal 
-  ```
+ CLR P1.7          ; Desativa o segmento do Ponto Decimal
+
+```
 
 
 
