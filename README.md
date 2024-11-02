@@ -272,9 +272,13 @@ col3 equ P0.6 ; Coluna 3
 
  **1º: Ativar o Chip Select (CS) do Decoder no pino P0.7.** 
  <img src="https://i.imgur.com/B49ZFZV.png" alt="CS" width="400" height="350" />
+
+ 
  
  **2º: Selecionar o display desejado utilizando os pinos A1 e A2 (P3.4 e P3.3).**
   <img src="https://i.imgur.com/yzGgWLo.png" alt="CS" width="400" height="350" />
+
+  
  
  **3º: Escrever os números nos displays utilizando os pinos P1.0 a P1.7 que estão conectados aos segmentos dos displays.**
   <img src="https://i.imgur.com/zyGJjRj.png" alt="CS" width="400" height="350" />
