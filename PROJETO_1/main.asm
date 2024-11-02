@@ -196,5 +196,3 @@ ESPERAR:
  jnb lin2,ESPERAR
  jnb lin3,ESPERAR
  ret
-
-       
