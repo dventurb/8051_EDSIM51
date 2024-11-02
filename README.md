@@ -244,7 +244,7 @@ Armazena em memória a contagem de teclas pressionadas.
 
 ## Entradas e Saídas (I/O)
 
- **PORT0 (P0.0 a P0.7):** Esta porta é utilizada para o teclado numérico de 4x4.
+ **PORT0 (P0.0 a P0.6):** Esta porta é utilizada para o teclado númerico de 4x4. O P0.7 não faz parte no teclado númerico.
  
  **PORT1 (P1.0 a P1.7):** Esta porta é utilizada para controlar LEDs.
 
@@ -267,5 +267,18 @@ col1 equ P0.4 ; Coluna 1
 col2 equ P0.5 ; Coluna 2
 col3 equ P0.6 ; Coluna 3
 ```
+
+### Display de 7 Segmentos 
+
+ **1º: Ativar o Chip Select (CS) do Decoder no pino P0.7.** 
+ <img src="https://i.imgur.com/B49ZFZV.png" alt="CS" width="400" height="350" />
+ 
+ **2º: Selecionar o display desejado utilizando os pinos A1 e A2 (P3.4 e P3.3).**
+  <img src="https://i.imgur.com/yzGgWLo.png" alt="CS" width="400" height="350" />
+ 
+ **3º: Escrever os números nos displays utilizando os pinos P1.0 a P1.7 que estão conectados aos segmentos dos displays.**
+  <img src="https://i.imgur.com/zyGJjRj.png" alt="CS" width="400" height="350" />
+
+
     
 
