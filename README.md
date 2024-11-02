@@ -271,7 +271,7 @@ col3 equ P0.6 ; Coluna 3
 ### Display de 7 Segmentos 
 
  **1º: Ativar o Chip Select (CS) do Decoder no pino P0.7.** 
- <img src="https://i.imgur.com/B49ZFZV.png" alt="CS" width="300" height="350" />
+ <img src="https://i.imgur.com/B49ZFZV.png" alt="CS" width="400" height="350" />
 
  
  
