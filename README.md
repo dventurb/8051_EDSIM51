@@ -247,6 +247,26 @@ Armazena em memória a contagem de teclas pressionadas.
  **PORT0 (P0.0 a P0.6):** Esta porta é utilizada para o teclado númerico de 4x4. O P0.7 não faz parte no teclado númerico.
  
  **PORT1 (P1.0 a P1.7):** Esta porta é utilizada para controlar o Display de 7 Segmentos e os LEDs. 
+ 
+ **PORT2 (P2.0 a P2.7):** Esta porta é utilizada para ler sinais analógicos, convertendo-os em digitais (ADC). 
+
+ **PORT0.7 (P0.7):** Este pino é o Chip Select (CS) do Decoder, é necessário ativa-lo para utilizar o Display de 7 Segmentos.
+
+ **PORT3.0 (P3.0):** Este pino é utilizado para controlar o estado de o motor, representa o primeiro Bit de Controlo. 
+
+ **PORT3.1 (P3.1):** Semelhante ao P3.0, serve como segundo Bit de Controlo para o motor.
+
+ **PORT3.2 (P3.2):** Este pino é utilizado para interrupções do ADC, quando uma conversão ADC é concluída, ele gera uma interrupção, informado que os dados estão prontos para leitura.
+
+ **PORT3.3 (P3.3):** Este pino é uma entrada do Decoder (A0), utilizar para selecionar qual Display de 7 Segmentos deve ser ativado.
+
+ **PORT3.4 (P3.4):** Assim como P3.3, este pino é também uma entrada do Decoder, funciona em conjunto com P3.3 para selecionar um dos Displays de 7 Segmentos.
+
+ **PORT3.5 (P3.5):** Este pino é utilizado para ler dados do sensor do motor, fornece informação sobre velocidade do motor.
+
+ **PORT3.6 (P3.6):** Este pino é utilizado para escrever dados no ADC.
+
+ **PORT3.7 (P3.7):** Este pino serve para leitura de dados do ADC, fornece o valor digital da conversão analógica.
 
 ### Estrutura do Teclado Numérico
 
