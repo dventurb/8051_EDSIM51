@@ -246,7 +246,7 @@ Armazena em memória a contagem de teclas pressionadas.
 
  **PORT0 (P0.0 a P0.6):** Esta porta é utilizada para o teclado númerico de 4x4. O P0.7 não faz parte no teclado númerico.
  
- **PORT1 (P1.0 a P1.7):** Esta porta é utilizada para controlar o Display de 7 Segmentos. 
+ **PORT1 (P1.0 a P1.7):** Esta porta é utilizada para controlar o Display de 7 Segmentos e os LEDs. 
 
 ### Estrutura do Teclado Numérico
 
