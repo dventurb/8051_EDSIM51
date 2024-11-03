@@ -328,7 +328,8 @@ JB lin4
  
 #### 3º: Escrever os números nos displays utilizando os pinos P1.0 a P1.7 que estão conectados aos segmentos dos displays.**
   <img src="https://i.imgur.com/zyGJjRj.png" alt="LEDS" width="450" height="350" />
-  ***No caso dos Displays de 7 segmentos é cátodo comum, significa que para ativar um segmento é feito com CLR, enquanto que para desativar é feito com SETB.***
+  
+  **No caso dos Displays de 7 segmentos é cátodo comum, significa que para ativar um segmento é feito com CLR, enquanto que para desativar é feito com SETB.**
   
 ```asm
 
