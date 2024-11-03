@@ -286,6 +286,17 @@ lin4 equ P0.3 ; Linha 4
 col1 equ P0.4 ; Coluna 1
 col2 equ P0.5 ; Coluna 2
 col3 equ P0.6 ; Coluna 3
+
+; Definir com 0 a coluna que iremos utilizar (col1) e verifica as linhas que estão pressionadas desta coluna (lin1, lin2, lin3, lin4).
+clr col1
+setb col2
+setb col3
+       
+JB lin1
+JB lin2
+JB lin3
+JB lin4
+
 ```
 
 ### Display de 7 Segmentos 
@@ -295,8 +306,8 @@ col3 equ P0.6 ; Coluna 3
  
 ```asm
 
- CLR P0.7   ; Desativa o Pino P0.7 (CS do Decoder)
- SETB P0.7  ; Ativa o Pino P0.7 (CS do Decoder)
+ CLR P0.7   ; Desativar o Pino P0.7 (CS do Decoder)
+ SETB P0.7  ; Ativar o Pino P0.7 (CS do Decoder)
 
 ```
 
@@ -306,10 +317,10 @@ col3 equ P0.6 ; Coluna 3
   <img src="https://i.imgur.com/yzGgWLo.png" alt="A1A2" width="450" height="350" />
   
 ```asm
- ; Neste exemplo estamos a definir o uso do Display 1
+ ; Neste exemplo estamos a definir o uso do Display 0 
 
  CLR P3.4   ; A1 = 0 
- SETB P3.3  ; A0 = 1
+ CLR P3.3   ; A0 = 0
 
 ```
 
@@ -317,19 +328,20 @@ col3 equ P0.6 ; Coluna 3
  
 #### 3º: Escrever os números nos displays utilizando os pinos P1.0 a P1.7 que estão conectados aos segmentos dos displays.**
   <img src="https://i.imgur.com/zyGJjRj.png" alt="LEDS" width="450" height="350" />
+  *** No caso dos Displays de 7 segmentos é cátodo comum, significa que para ativar um segmento é feito com CLR, enquanto que para desativar é feito com SETB.
   
 ```asm
 
-; Neste exemplo estamos da definir o número 0 nos segmentos
+; Neste exemplo estamos da definir o número 1 nos segmentos
 
- SETB P1.0         ; Ativa o segmento A
- SETB P1.1         ; Ativa o segmento B
- SETB P1.2         ; Ativa o segmento C
- SETB P1.3         ; Ativa o segmento D
- SETB P1.4         ; Ativa o segmento E
- SETB P1.5         ; Ativa o segmento F
- CLR P1.6          ; Desativa o segmento G
- CLR P1.7          ; Desativa o segmento do Ponto Decimal
+ SETB P1.0         ; Desativa o segmento A
+ CLR P1.1         ; Ativa o segmento B
+ CLR P1.2         ; Ativa o segmento C
+ SETB P1.3         ; Desativa o segmento D
+ SETB P1.4         ; Desativa o segmento E
+ SETB P1.5         ; Desativa o segmento F
+ SETB P1.6          ; Desativa o segmento G
+ SETB P1.7          ; Desativa o segmento do Ponto Decimal
 
 ```
 
