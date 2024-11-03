@@ -12,91 +12,76 @@ lin3 equ p0.1
 lin4 equ p0.0
 
 tecla equ 05h
-mov tecla, 000h
-
+mov tecla, #00h
 
 ciclo:
 lcall lerTeclado
 lcall escDisplay
 ljmp ciclo
 
-apgDisplay:
-mov A, #0FFh
-mov P1, A
-RET
 
 escDisplay:
- ed_if1:
   mov A, tecla
-  subb A, #1
-  JNZ ed_fim_if1
+  CJNE A, #1, ed_if2
   mov A, #0F9h
   mov P1, A
- ed_fim_if1:
- ed_if2:
-  mov A, tecla
-  subb A, #2
-  JNZ ed_fim_if2
+  SJMP ed_fim
+
+ed_if2:
+  CJNE A, #2, ed_if3
   mov A, #0A4h
   mov P1, A
- ed_fim_if2:
- ed_if3:
-  mov A, tecla
-  subb A, #3
-  JNZ ed_fim_if3
+  SJMP ed_fim
+
+ed_if3:
+  CJNE A, #3, ed_if4
   mov A, #0B0h
   mov P1, A
- ed_fim_if3:
- ed_if4:
-  mov A, tecla
-  subb A, #4
-  JNZ ed_fim_if4
+  SJMP ed_fim
+
+ed_if4:
+  CJNE A, #4, ed_if5
   mov A, #99h
   mov P1, A
- ed_fim_if4:
- ed_if5:
-  mov A, tecla
-  subb A, #5
-  JNZ ed_fim_if5
+  SJMP ed_fim
+
+ed_if5:
+  CJNE A, #5, ed_if6
   mov A, #092h
   mov P1, A
- ed_fim_if5:
- ed_if6:
-  mov A, tecla
-  subb A, #6
-  JNZ ed_fim_if6
+  SJMP ed_fim
+
+ed_if6:
+  CJNE A, #6, ed_if7
   mov A, #082h
   mov P1, A
- ed_fim_if6:
- ed_if7:
-  mov A, tecla
-  subb A, #7
-  JNZ ed_fim_if7
+  SJMP ed_fim
+
+ed_if7:
+  CJNE A, #7, ed_if8
   mov A, #0F8h
   mov P1, A
- ed_fim_if7:
- ed_if8:
-  mov A, tecla
-  subb A, #8
-  JNZ ed_fim_if8
+  SJMP ed_fim
+
+ed_if8:
+  CJNE A, #8, ed_if9
   mov A, #080h
   mov P1, A
- ed_fim_if8:
- ed_if9:
-  mov A, tecla
-  subb A, #9
-  JNZ ed_fim_if9
+  SJMP ed_fim
+
+ed_if9:
+  CJNE A, #9, ed_if10
   mov A, #090h
   mov P1, A
- ed_fim_if9:
- ed_if10:
-  mov A, tecla
-  subb A, #11
-  JNZ ed_fim_if10
+  SJMP ed_fim
+
+ed_if10:
+  CJNE A, #11, ed_fim
   mov A, #0C0h
   mov P1, A
- ed_fim_if10:
-RET
+ed_fim:
+  RET
+
 
 lerTeclado:
 
