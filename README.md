@@ -242,6 +242,16 @@ Armazena em memória a contagem de teclas pressionadas.
 ```
 
 
+  ***CJNE (COMPARE AND JUMP IF NOT EQUAL)***
+     O CJNE compara dois valores e verifica se são iguais, caso sejam iguais executa as próximas instruções, caso os valores não sejam iguais salta para a LABEL indicada.
+   ```asm
+     MOV A, #02h       ; Mover 0 para o acumulador A
+     CJNE A, #2, LABEL_CRIADA  ; Compara A com 2, se forem iguais executa as próximas intruções, caso sejam diferentes salta para LABEL_CRIADA
+     ...
+     LABEL_CRIADA:
+```
+
+
 ## Entradas e Saídas (I/O)
 
  **PORT0 (P0.0 a P0.6):** Esta porta é utilizada para o teclado númerico de 4x4. O P0.7 não faz parte no teclado númerico.
