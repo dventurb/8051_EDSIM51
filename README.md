@@ -27,7 +27,7 @@ O simulador funciona em Windows, Linux e macOS, por ser baseado em JavaTM, deve 
 
 # Projetos
 
-Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15 projetos que exploram a interação com dispositivos de entrada e saída
+Na disciplina de Arquitetura de Sistemas de Computadores, foram desenvolvidos 15 projetos que exploram a interação com dispositivos de entrada e saída.
 
 
 <p align="center"><strong>Controle de Cursor</strong></p>
@@ -280,7 +280,7 @@ Armazena em memória a contagem de teclas pressionadas.
 
 ### Estrutura do Teclado Numérico
 
-O teclado numérico tem 4 colunas e 4 linhas, como podemos verificar na figura.
+O teclado numérico tem 4 linhas e 3 colunas (4x3), como podemos verificar na figura.
 
 <img src="https://github.com/dventurb/8051_EDSIM51/blob/main/keypad.png" alt="KEYPAD" width="400" height="350" />
 
